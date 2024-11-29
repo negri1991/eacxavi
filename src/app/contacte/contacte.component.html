@@ -1,0 +1,33 @@
+<app-header></app-header>
+<app-menu-principal></app-menu-principal>
+<div style=" width: 100%; margin-top:10%; margin-bottom: 10%;  display: flex; align-items: center; justify-content: center;">
+  <form [formGroup]="form" (ngSubmit)="enviemValors()" style="width: 50%; display: flex; flex-direction: column; align-items: center; gap:10px; border: solid 2px #ffc107; border-radius: 5px; padding-bottom:20px;">
+    <mat-form-field appearance="fill" style="width: 80%; margin-top:50px;">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="nom">
+      <mat-error *ngIf="form.get('nom')?.hasError('required')">El nom és obligatori</mat-error>
+    </mat-form-field>
+
+
+
+    <mat-form-field appearance="fill" style="width: 80%;">
+      <mat-label>Correu electrònic</mat-label>
+      <input matInput formControlName="correu">
+      <mat-error *ngIf="form.get('correu')?.hasError('required')">El correu és obligatori</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 80%;">
+      <mat-label>Telèfon</mat-label>
+      <input matInput formControlName="telefon">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 80%;">
+      <mat-label>Missatge</mat-label>
+      <input matInput formControlName="missatge">
+    </mat-form-field>
+
+    <button class="btn btn-danger mt-3" (click)="enviemValors()" [disabled]="form.invalid">Enviar</button>
+
+  </form>
+</div>
+<app-footer></app-footer>
