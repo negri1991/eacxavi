@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Francisco Javier Sanz Rayo">
+    <title>DAW-M09 - Web Bootstrap - Inici</title>
+
+    <!-- Enllaç al CSS de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Enllaç a Font Awesome -->
+    <script src="https://kit.fontawesome.com/350bb898bc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css"><!--CSS-->
+</head>
+
+<body>
+    <!-- Inici de la capçalera -->
+    <header>
+        <div class="row text-white align-items-center fixed-top" style="background-color: white;">
+            <div class="col-4 col-sm-4 col-md-8">
+                <a href="index.html">
+                    <img src="images/logoBlanco.png" class="img-fluid logo" alt="Logo de VitKat"
+                        style="max-width: 50px;">
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2">
+
+                <a href="iniciarSessio.html">
+                    <i class="fa-solid fa-user"></i>
+                    Iniciar sessió
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2">
+                <!-- Selector d'idioma -->
+                <select name="idiomes">
+                    <option value="es">Español</option>
+                    <option value="ca">Català</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Inici del menú  -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark mt-5">
+        <button type="button" class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3 " href="index.html"> <i
+                            class="fa-solid fa-house" style="padding-right: 10px;"></i>Inici</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3" href="contacte.html"><i
+                            class="fa-solid fa-address-book" style="padding-right: 10px;"></i>Contacte</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3" href="registrat.html"><i
+                            class="fa-solid fa-user" style="padding-right: 10px;"></i>Registrat</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light font-weight-bold text-uppercase px-3" href="#"
+                        id="eac2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        EAC2
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="eac2Dropdown">
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="imatges.html"><i class="fa-regular fa-image"
+                                    style="padding-right: 10px;"></i>Imatges</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="audio.html"><i class="fa-solid fa-music"
+                                    style="padding-right: 10px;"></i>Audio</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="video.html"><i class="fa-solid fa-video"
+                                    style="padding-right: 10px;"></i>Video</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="playlist.html"><i class="fa-solid fa-video"
+                                    style="padding-right: 10px;"></i>Playlist</a></li>
+                        <li><a class="active nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="transicions.html">Transicions</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="animacions.html">Animacions</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="grafica.html"> <i class="fa-solid fa-chart-simple"
+                                    style="padding-right: 10px;"></i>Gràfica</a></li>
+                        <li><a class=" nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="galeria.html"><i class="fa-regular fa-image"
+                                    style="padding-right: 10px;"></i>Galeria</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="https://llistatreact.vercel.app"><i class="iconoReact"></i>Llistat</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="https://eacxavi.vercel.app"><i class="iconoAngular"></i>Contacte</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Barra de cerca -->
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Cerca" aria-label="Cerca">
+                    <button class="btn bg-light input-group-text" id="search-button" type="button"
+                        onclick="window.location.href='cercle.html'">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- Inici de la secció principal -->
+    <main>
+        <h1 class="transicions">Promocions de la setmana</h1>
+        <div class="container">
+            <div class="containerPromocio">
+                <h2 class="titolPromocions" id="titolPromocions">Pack de Motxilla + Estoig amb un 20% de descompte:
+                    Total només 30 €!.</h2>
+                <div class="item">
+                    <img src="images/Motxilla.jpg">
+                    <div class="caption">
+                        <h4>Motxilla</h4>
+                        <p>Dues cremalleras, tamany: 41 x 30 x 18 cm</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Estoig.jpg">
+                    <div class="caption">
+                        <h4>Estoig</h4>
+                        <p>Tamany: 23 x 9 x 1,5 cm</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="containerPromocio">
+                <h2 class="titolPromocions" id="titolPromocions2">Pack Catan + Escacs 20% de descompte: Total només 40
+                    €!.</h2>
+                <div class="item">
+                    <img src="images/catan.jpg">
+                    <div class="caption">
+                        <h4>Catan</h4>
+                        <p>Tamany: 19 x 27 x 7 cm </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Escacs.jpg">
+                    <div class="caption">
+                        <h4>Escacs</h4>
+                        <p>Tamany: 53 x 53 x 2 cm</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Inici del peu de pàgina -->
+    <footer class="bg-dark text-white p-4">
+        <div class=" row align-items-center justify-content-center">
+            <div class="col-md-3 col-12 mb-2">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo de VitKat" width="200" height="200">
+                </a>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Ajuda</h4>
+                <p>Preguntes freqüents</p>
+                <p>Condicions de compra</p>
+                <p>Política de privadesa</p>
+                <p>Canal de denúncies</p>
+                <p>Avís legal</p>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Contacte</h4>
+                <p>Formulari de contacte</p>
+                <p>Whatsapp - 684541447</p>
+                <p>Telèfon - 938748710</p>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Segueix-nos</h4>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Enllaç a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const titol = document.getElementById("titolPromocions");
+            const titol2 = document.getElementById("titolPromocions2");
+            titol.classList.add("show");
+            titol2.classList.add("show");
+        });
+    </script>
+
+
+</body>
+
+</html>

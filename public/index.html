@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Francisco Javier Sanz Rayo">
+    <title>DAW-M09 - Web Bootstrap - Inici</title>
+
+    <!-- Enllaç al CSS de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Enllaç a Font Awesome -->
+    <script src="https://kit.fontawesome.com/350bb898bc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css"><!--CSS-->
+</head>
+
+<body>
+    <!-- Inici de la capçalera -->
+    <header>
+        <div class="row text-white align-items-center fixed-top" style="background-color: white;">
+            <div class="col-4 col-sm-4 col-md-8">
+                <a href="index.html">
+                    <img src="images/logoBlanco.png" class="img-fluid logo" alt="Logo de VitKat"
+                        style="max-width: 50px;">
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2">
+
+                <a href="iniciarSessio.html">
+                    <i class="fa-solid fa-user"></i>
+                    Iniciar sessió
+                </a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2">
+                <!-- Selector d'idioma -->
+                <select name="idiomes">
+                    <option value="es">Español</option>
+                    <option value="ca">Català</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Inici del menú  -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark mt-5">
+        <button type="button" class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3 " href="index.html"> <i
+                            class="fa-solid fa-house" style="padding-right: 10px;"></i>Inici</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3" href="contacte.html"><i
+                            class="fa-solid fa-address-book" style="padding-right: 10px;"></i>Contacte</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3" href="registrat.html"><i
+                            class="fa-solid fa-user" style="padding-right: 10px;"></i>Registrat</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light font-weight-bold text-uppercase px-3" href="#"
+                        id="eac2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        EAC2
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="eac2Dropdown">
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="imatges.html"><i class="fa-regular fa-image"
+                                    style="padding-right: 10px;"></i>Imatges</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="audio.html"><i class="fa-solid fa-music"
+                                    style="padding-right: 10px;"></i>Audio</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="video.html"><i class="fa-solid fa-video"
+                                    style="padding-right: 10px;"></i>Video</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="playlist.html"><i class="fa-solid fa-video"
+                                    style="padding-right: 10px;"></i>Playlist</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="transicions.html">Transicions</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="animacions.html">Animacions</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="grafica.html"> <i class="fa-solid fa-chart-simple"
+                                    style="padding-right: 10px;"></i>Gràfica</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="galeria.html"><i class="fa-regular fa-image"
+                                    style="padding-right: 10px;"></i>Galeria</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="https://llistatreact.vercel.app"><i class="iconoReact"></i>Llistat</a></li>
+                        <li><a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-item"
+                                href="https://eacxavi.vercel.app"><i class="iconoAngular"></i>Contacte</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Barra de cerca -->
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Cerca" aria-label="Cerca">
+                    <button class="btn bg-light input-group-text" id="search-button" type="button"
+                        onclick="window.location.href='cercle.html'">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!-- Carrusel-->
+    <div id="carrusel" class="carousel slide" data-bs-ride="carousel" style="margin-top:100px;">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+            <span class="visually-hidden">Següent</span>
+        </button>
+        <div class="carousel-inner">
+            <!-- Primera -->
+            <div class="carousel-item active pb-2">
+                <div class="divCarrusel">
+                    <div class="divCarruselTexto" style=" border:2px black solid;">
+                        <h2 class="mb-3">Reserva la teva sala de joc amb els teus amics!</h2>
+                        <p class="mb-4">Descobreix els últims jocs de consola com PlayStation 5, Xbox, Nintendo Switch i
+                            una emocionant selecció de jocs de taula.
+                            Si proves els nostres serveis, gaudiràs d’un 10% de descompte a la teva primera compra! No
+                            perdis l’oportunitat de viure moments inoblidables amb els teus amics.</p>
+                    </div>
+                    <div class="divCarruselFoto" style=" border:2px black solid;">
+                        <img src="images/catan.jpg" class="img-fluid" alt="Catan">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger mt-3" style="background-color: #FF5733;"
+                        onclick="window.location.href='contacte.html'">Reserva</button>
+                </div>
+            </div>
+
+            <!-- Segona -->
+            <div class="carousel-item pb-2">
+                <div class="divCarrusel">
+                    <div class="divCarruselTexto">
+                        <h2 class="mb-3">Lloguer de Llibres</h2>
+                        <p class="mb-4">Contacta'ns i el rebràs en menys de 48 hores! Gaudeix de la teva lectura
+                            favorita de manera ràpida i fàcil.</p>
+                    </div>
+                    <div class="divCarruselFoto">
+                        <img src="images/Llibres.jpg" class="img-fluid" alt="Llibres">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger mt-3" style="background-color: #FF5733;"
+                        onclick="window.location.href='contacte.html'">Vull
+                        llogar</button>
+                </div>
+            </div>
+
+            <!-- Tercera -->
+            <div class="carousel-item pb-2">
+                <div class="divCarrusel">
+                    <div class="divCarruselTexto">
+                        <h2 class="mb-3">Material escolar.</h2>
+                        <p class="mb-4">Troba el que necessites, més de 10.000 productes a la teva disposició. Enviament
+                            gratis en compres de més de 50 euros.</p>
+                    </div>
+                    <div class="divCarruselFoto">
+                        <img src="images/MaterialEscolar.jpg" class="img-fluid" alt="Material Escolar">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-danger mt-3 " style="background-color: #FF5733;"
+                        onclick="window.location.href='cercle.html'">Productes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Inici de la secció principal -->
+    <main>
+        <section class="ofertes">
+            <h1 class="pb-2 text-center">Ofertes</h1>
+            <div class="articles-ofertes">
+                <article>
+                    <h3>Eucerin Anti-Pigment, 50ml</h3>
+                    <p>Eucerin Anti-Pigment Crema de Nit redueix les taques i aporta un to homogeni a la pell, a més de
+                        prevenir-ne l'aparició</p>
+                    <button type="button" class="btn btn-danger" style="background-color: #FF5733;"
+                        onclick="window.location.href='producte.html'">
+                        Afegeix a la cistella
+                    </button>
+                </article>
+
+
+                <article>
+                    <h3>Eucerin Hyaluron-Filler + Elasticity noche, 50 ml</h3>
+                    <p>Eucerin Hyaluron-Filler + Elasticity Nit rejoveneix la pell madura amb una alta concentració
+                        d'actius
+                        com àcid hialurònic, oli d'argan, i card marià, que aporten a la pell.</p>
+                    <button type="button" class="btn btn-danger" style="background-color: #FF5733;"
+                        onclick="window.location.href='producte.html'">
+                        Afegeix a la cistella
+                    </button>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="videos pt-2">
+            <h1 class="text-center">Videos dels productes</h1>
+            <div class="articles-videos">
+                <article>
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                    <h3>Eucerin Anti-Pigment, 50 ml</h3>
+                    <p>Eucerin Anti-Pigment Crema de Nit redueix les taques i aporta un to homogeni a la pell, a més de
+                        prevenir-ne l'aparició.</p>
+                </article>
+
+                <article>
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                    <h2>Eucerin Hyaluron-Filler + Elasticity noche, 50 ml</h2>
+                    <p>Eucerin Hyaluron-Filler + Elasticity Nit rejoveneix la pell madura amb una alta
+                        concentració
+                        d'actius com àcid hialurònic, oli d'argan, i card marià, que aporten a la pell.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="noticies">
+        <h4>Noticies</h4>
+        <p>Puja el sou interprofessional <a href="https://www.elperiodico.com/smi"
+                target="_blank">elperiodico.com/smi</a></p>
+        <p>El barça guanya la champions <a href="https://www.sport.es/barcelona" target="_blank">sport.es/barcelona</a>
+        </p>
+    </div>
+
+
+    <!-- Inici del peu de pàgina -->
+    <footer class="bg-dark text-white p-4">
+        <div class=" row align-items-center justify-content-center">
+            <div class="col-md-3 col-12 mb-2">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo de VitKat" width="200" height="200">
+                </a>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Ajuda</h4>
+                <p>Preguntes freqüents</p>
+                <p>Condicions de compra</p>
+                <p>Política de privadesa</p>
+                <p>Canal de denúncies</p>
+                <p>Avís legal</p>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Contacte</h4>
+                <p>Formulari de contacte</p>
+                <p>Whatsapp - 684541447</p>
+                <p>Telèfon - 938748710</p>
+            </div>
+            <div class="col-md-3 col-12 mb-2">
+                <h4 style="color: #ffc107;">Segueix-nos</h4>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Enllaç a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
