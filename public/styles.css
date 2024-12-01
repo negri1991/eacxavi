@@ -250,6 +250,29 @@
             opacity: 1;
         }
 
+        /* ICONOS */
+        .iconoAngular {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url('images/angular.png');
+            background-size: contain; /* Cambiado a "contain" */
+            background-repeat: no-repeat; /* Evita repeticiones */
+            background-position: center; /* Centra la imagen */
+            padding-right: 20px;
+        }
+        .iconoReact {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url('images/react.png');
+            background-size: contain; /* Cambiado a "contain" */
+            background-repeat: no-repeat; /* Evita repeticiones */
+            background-position: center; /* Centra la imagen */
+            padding-right: 20px;
+        }
+        
+
         /*ANIMACIONS.html*/
         .animacions {
             color: #ffc107;
