@@ -187,9 +187,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
-            
+
         }
-        .containerPromocio{
+
+        .containerPromocio {
             background-color: #f1f1f1;
         }
 
@@ -250,6 +251,35 @@
             opacity: 1;
         }
 
+        /* ICONOS */
+        .iconoAngular {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url('images/angular.png');
+            background-size: contain;
+            /* Cambiado a "contain" */
+            background-repeat: no-repeat;
+            /* Evita repeticiones */
+            background-position: center;
+            /* Centra la imagen */
+            padding-right: 20px;
+        }
+
+        .iconoReact {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url('images/react.png');
+            background-size: contain;
+            /* Cambiado a "contain" */
+            background-repeat: no-repeat;
+            /* Evita repeticiones */
+            background-position: center;
+            /* Centra la imagen */
+            padding-right: 20px;
+        }
+
         /*ANIMACIONS.html*/
         .animacions {
             color: #ffc107;
@@ -262,6 +292,7 @@
             animation-direction: alternate;
             animation-fill-mode: backwards;
         }
+
         @keyframes moureICanviarMida {
             from {
                 transform: translate(0%, 0%) scale(1);
@@ -276,11 +307,13 @@
             text-align: center;
             animation: moviment-esquerra 3s linear;
         }
+
         @keyframes moviment-esquerra {
             from {
                 transform: translate(-200px, 0);
             }
-             to {
+
+            to {
                 transform: translate(0px, 0);
             }
         }
@@ -289,11 +322,13 @@
             text-align: center;
             animation: moviment-dret 3s linear;
         }
+
         @keyframes moviment-dret {
             from {
                 transform: translate(200px, 0);
             }
-             to {
+
+            to {
                 transform: translate(0px, 0);
             }
         }
@@ -303,10 +338,12 @@
         svg {
             border: solid 1px gray;
         }
-        .contenidorPrincipal{
+
+        .contenidorPrincipal {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
         /*GALERIA.html*/
         #carousel {
             width: 100%;
@@ -315,7 +352,7 @@
             position: relative;
 
         }
- 
+
         #carousel img {
             position: absolute;
             top: 0;
@@ -323,41 +360,45 @@
             opacity: 0;
             width: 75%;
             height: 100%;
-            object-fit: cover; 
-            transition: opacity 0.5s ease; 
+            object-fit: cover;
+            transition: opacity 0.5s ease;
         }
- 
+
         #carousel img.active {
             opacity: 1;
 
         }
 
-        .botons{
+        .botons {
             display: flex;
             flex-direction: row;
             justify-content: center;
             width: 100%;
             margin-top: 20px;
-            
+
         }
+
         .botoImatge {
-            width: 20px; 
-            height: 20px; 
-            background-color: #ff5733; 
-            border-radius: 50%; 
-            border: none; 
-            margin: 0 5px; 
-            cursor: pointer; 
-            outline: none; 
-            transition: background-color 0.3s; 
+            width: 20px;
+            height: 20px;
+            background-color: #ff5733;
+            border-radius: 50%;
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s;
         }
+
         .botoImatge:hover {
-            background-color: #b33f25; /* Color más oscuro al pasar el mouse */
+            background-color: #b33f25;
+            /* Color más oscuro al pasar el mouse */
         }
 
         .botoImatge:active {
-            background-color: #702717; /* Color más oscuro al hacer clic */
-            transform:scale(1.5) ;
+            background-color: #702717;
+            /* Color más oscuro al hacer clic */
+            transform: scale(1.5);
         }
 
         /* Versió mòbil*/
